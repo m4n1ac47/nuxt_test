@@ -1,3 +1,8 @@
+function randomInteger(min, max) {
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+}
+
 const state = {
   users: []
 }
@@ -12,7 +17,7 @@ const mutations = {
   },
 
   ADD_USER (state, user) {
-    const newId = state.users.length + 999 + 1
+    const newId = state.users.length + randomInteger(1000, 10000)
     // emulation fakeUser
     const mockUserData = {
       id: 1,
