@@ -12,7 +12,7 @@ const mutations = {
   },
 
   ADD_USER (state, user) {
-    const newId = state.users.length + 1
+    const newId = state.users.length + 999 + 1
     // emulation fakeUser
     const mockUserData = {
       id: 1,
