@@ -7,7 +7,7 @@
   <v-container>
     <v-btn color="green" @click="toggleModal">Add user</v-btn>
     <transition-group name="list" tag="div" class="row">
-      <v-col v-for="item in users" :key="item.id" cols="12" xs="12" sm="6" md="4" lg="3">
+      <v-col v-for="item in users" :key="item.id" cols="12" xs="12" sm="6" md="4" lg="4" xl="3">
         <v-card class="list-item">
           <v-card-title class="headline">{{item.name}}</v-card-title>
           <v-card-subtitle>{{item.email}}</v-card-subtitle>
